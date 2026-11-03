@@ -2,7 +2,7 @@
 
 Native Windows apps for documents, spreadsheets, presentations and PDFs. Start with the launcher and choose only the apps you need.
 
-**[Download OfficePro →](https://officepro.pages.dev)**
+**[Download OfficePro](https://officepro.pages.dev)**
 
 ## Releases
 
