@@ -30,7 +30,7 @@ The apps are portable. The suite archive can simply be extracted and run without
 
 - Windows 10 or Windows 11, 64-bit.
 - The launcher is unsigned, so Windows SmartScreen may ask you to confirm it.
-- No account, telemetry, background service or install-time network requirement.
+- No account, telemetry, background service or runtime internet requirement. A connection is needed only when downloading an app.
 - Cloud sync is optional and uses the OneDrive or Google Drive desktop client you already have. OfficePro does not create its own cloud folder.
 - Licences, third-party notices and attribution files are included in every app folder.
 
