@@ -1,0 +1,112 @@
+name: Bug report
+description: Report a problem with an OfficePro download, installer or app.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Please check the latest
+        release and search existing issues first. Remove personal information,
+        document contents and secrets from anything you attach.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you file
+      options:
+        - label: I checked the latest release and searched existing issues.
+          required: true
+        - label: I verified the download against SHA256SUMS.txt.
+          required: false
+        - label: This report does not contain exploit details or a malicious file.
+          required: true
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - OfficePro suite
+        - Word Pro
+        - Sheet Pro
+        - Slides Pro
+        - PDF Pro
+        - Portable launcher
+        - Installer or uninstaller
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The suite or app version shown in the release or About window.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: asset
+    attributes:
+      label: Download asset
+      description: The exact file you downloaded.
+      placeholder: "OfficePro-Setup.exe"
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and architecture
+      placeholder: "Windows 11 24H2, x64"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install_method
+    attributes:
+      label: Installation method
+      options:
+        - Complete suite installer
+        - Standalone app installer
+        - Portable suite archive
+        - Portable launcher
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and its impact.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the smallest sequence that reliably reproduces the problem.
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Remove personal paths, document contents and secrets first.
+      render: text
+    validations:
+      required: false

@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Download the latest OfficePro release
+    url: https://github.com/ThatAerospaceandTechGuy/officepro/releases/latest
+    about: Get the current suite installer, portable archive and checksums.
+  - name: Security policy
+    url: https://github.com/ThatAerospaceandTechGuy/officepro/security
+    about: Report a vulnerability privately instead of opening a public issue.
+  - name: Support guide
+    url: https://github.com/ThatAerospaceandTechGuy/officepro/blob/main/SUPPORT.md
+    about: Read what to include before filing a support issue.
